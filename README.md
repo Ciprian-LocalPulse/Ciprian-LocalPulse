@@ -11,4 +11,4 @@ Operating exclusively in the B2B financial sector, architecting highly secure, a
 
 🔒 **NOTICE:** *All operational repositories, source code, and deployment blueprints are maintained in strictly private, encrypted vaults. Access is granted exclusively to verified enterprise clients post-settlement via authorized SSH keys or direct organizational invites.*
 
-📥 **Procurement & Audits:** [Schedule Technical Briefing](https://cal.com/ciprian-stefan-plesca) | 🌐 [LocalPulse.pro](https://localpulse.pro)
+📥 **Procurement & Audits:** [Schedule Technical Briefing](https://cal.com/ciprian-stefan-plesca) | 🌐 [LocalPulse.pro](https://www.localpulse.pro)
