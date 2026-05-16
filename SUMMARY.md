@@ -8,4 +8,3 @@
   * [Public Edition Notice](assets/PUBLIC_EDITION_NOTICE.md)
   * [Security Policy](assets/SECURITY.md)
   * [Support](assets/SUPPORT.md)
-* [Architect Profile](architect-profile.md)
