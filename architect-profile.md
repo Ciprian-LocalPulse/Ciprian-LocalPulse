@@ -1,10 +1,10 @@
-# index
+# Architect Profile
 
 Building secure · zero-trust · privacy-first AI architectures
 
 Independent research into sovereign AI deployment models, open security architectures, and compliance-ready enterprise blueprints — built outside the influence of Big Tech roadmaps.
 
-[⚡ Become a Sponsor](https://github.com/sponsors/Ciprian-LocalPulse) [↓ Explore Projects](index.md#projects)
+[⚡ Become a Sponsor](https://github.com/sponsors/Ciprian-LocalPulse) [↓ Explore Projects](architect-profile.md#projects)
 
 ## Metrics
 
