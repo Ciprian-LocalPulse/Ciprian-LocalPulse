@@ -187,7 +187,7 @@ Available for a restricted number of strategic engagements involving:
 
 | CHANNEL | ACCESS |
 |:---|:---|
-| 🌐 **Official Gateway** | [localpulse.pro](https://www.localpulse.pro) |
+| 🌐 **Official Gateway** | [AgentFlow-Enterprise](https://agentflow-enterprise.com/) |
 | 📅 **Private Technical Briefing** | [cal.com/ciprian-stefan-plesca](https://cal.com/ciprian-stefan-plesca) |
 | 💎 **Support Independent Research** | [GitHub Sponsors](https://github.com/sponsors) |
 
