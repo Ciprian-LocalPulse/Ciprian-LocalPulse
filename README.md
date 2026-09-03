@@ -19,11 +19,11 @@
 █  MISSION CONTROL // OPERATOR LOG                                    █
 ██████████████████████████████████████████████████████████████████████
 
-  CALLSIGN ......... Ciprian Stefan Plesca
-  BASE .............. Piatra Neamt, Romania (EU)
-  DOMAIN ............ Applied Cryptography / Biomedical Infra / AI Systems
-  MODE .............. Solo operator, open-source, continuous deployment
-  CLOCK ............. T+ [ see commit history — no fabricated uptime here ]
+  CALLSIGN .......... Ciprian Stefan Plesca
+  BASE ............... Piatra Neamt, Romania (EU)
+  DOMAIN .............. Applied Cryptography / Biomedical Infra / AI Systems
+  MODE ................ Solo operator, open-source, continuous deployment
+  CLOCK ............... T+ [ see commit history — no fabricated uptime here ]
 
   TRANSMISSION: All systems below are built and maintained by one person.
   No team badge, no fake org chart. What you see is what was built.
@@ -31,6 +31,46 @@
 ```
 
 ---
+
+<div align="center">
+
+## `>_ SYSTEMS MAP`
+
+</div>
+
+```mermaid
+flowchart TB
+    subgraph FOCUS["OPERATIONAL DOMAINS"]
+        direction LR
+        CRYPTO["Applied Cryptography<br/>&amp; Digital Continuity"]
+        HEALTH["Healthcare Interop<br/>&amp; CDS"]
+        AI["Neuro-Symbolic<br/>&amp; Agentic AI"]
+        SCI["Open Science<br/>Infrastructure"]
+    end
+
+    subgraph PROJECTS["ACTIVE SYSTEMS"]
+        DLP["Digital Legacy Protocol<br/>v0.8 — prototype"]
+        MED["MedIntelOS<br/>alpha"]
+        ONRR["Open Negative Results Registry<br/>active dev"]
+        NSAIF["NSAIF<br/>research prototype"]
+    end
+
+    CRYPTO --> DLP
+    HEALTH --> MED
+    SCI --> ONRR
+    AI --> NSAIF
+    AI -.assists.-> MED
+
+    classDef domain fill:#001a0d,stroke:#00FF41,color:#00FF41,stroke-width:2px
+    classDef proto fill:#000000,stroke:#00cc33,color:#00cc33,stroke-width:1px,stroke-dasharray: 4 2
+    classDef alpha fill:#000000,stroke:#00FF41,color:#00FF41,stroke-width:2px
+    classDef dev fill:#000000,stroke:#00cc33,color:#00cc33,stroke-width:1px
+
+    class CRYPTO,HEALTH,AI,SCI domain
+    class DLP,NSAIF proto
+    class MED alpha
+    class ONRR dev
+```
 
 <div align="center">
 
@@ -76,6 +116,37 @@
 
 <div align="center">
 
+## `>_ PROTOCOL DEEP DIVE — DIGITAL LEGACY PROTOCOL`
+
+*State machine below is illustrative of the documented design — verify against `src/` before treating it as authoritative.*
+
+</div>
+
+```mermaid
+stateDiagram-v2
+    [*] --> Provisioned: shares distributed (Shamir SS, threshold t-of-n)
+    Provisioned --> Alive: first heartbeat received
+    Alive --> Alive: periodic check-in
+    Alive --> Grace: heartbeat missed
+    Grace --> Alive: check-in received before window closes
+    Grace --> Triggered: grace window expires
+    Triggered --> Reconstructing: threshold shares presented
+    Reconstructing --> Released: signature verified (Ed25519)
+    Reconstructing --> [*]: verification failed / insufficient shares
+    Released --> [*]
+
+    note right of Grace
+        No single holder can force
+        release before window expiry —
+        that's the property the ~218
+        transition tests exist to check.
+    end note
+```
+
+---
+
+<div align="center">
+
 ## `>_ SIGNAL / SYSTEM METRICS`
 
 <img height="150" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ciprian-LocalPulse&theme=github_dark_dimmed"/>
@@ -93,6 +164,8 @@
   [OK] Every mission above states its own maturity level.
   [OK] No claim of certification, deployment, or clinical use
        that isn't documented inside the repository itself.
+  [OK] Diagrams are documentation, not decoration — each maps
+       to a real state machine or dependency, not an aesthetic.
   [!!] Independent code review: not yet received. Actively wanted —
        open an issue if you find something broken.
 ```
