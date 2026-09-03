@@ -112,14 +112,16 @@ flowchart TB
 └──────────────────────────────────────────────────────────────────────┘
 
 ┌──────────────────────────────────────────────────────────────────────┐
-│ MISSION 05 // COMPREHENSIVE ONLINE DEFENSE (VOL. I & II)             │
+│ MISSION 05 // COMPREHENSIVE ONLINE DEFENSE (VOL. I – III)            │
 │ ---------------------------------------------------------------------│
-│ Free, two-part cybersecurity reference. Vol. I: terminology, threat  │
+│ Free three-part cybersecurity reference. Vol. I: terminology, threat │
 │ taxonomy, and countermeasures from user- to expert-level. Vol. II:   │
 │ essay on the geopolitics, economics, and philosophy of cyber         │
-│ (in)security — Mermaid-diagrammed, concept synthesis, not empirical  │
-│ research.                                                            │
-│ STAGE: complete — released for free reuse with attribution.          │
+│ (in)security. Vol. III: esoteric-language case studies (Brainfuck,   │
+│ Malbolge, Julia) on the measured cost of expressive complexity —     │
+│ every code sample compiled/run and verified before publication.      │
+│ STAGE: complete — trilogy closed, released for free reuse with       │
+│ attribution.                                                          │
 └──────────────────────────────────────────────────────────────────────┘
 ```
 
