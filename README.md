@@ -110,6 +110,17 @@ flowchart TB
 │ Neuro-symbolic reasoning + adaptive agents (ReAct, CoT).             │
 │ STAGE: research prototype / testbed.                                 │
 └──────────────────────────────────────────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│ MISSION 05 // COMPREHENSIVE ONLINE DEFENSE (VOL. I & II)             │
+│ ---------------------------------------------------------------------│
+│ Free, two-part cybersecurity reference. Vol. I: terminology, threat  │
+│ taxonomy, and countermeasures from user- to expert-level. Vol. II:   │
+│ essay on the geopolitics, economics, and philosophy of cyber         │
+│ (in)security — Mermaid-diagrammed, concept synthesis, not empirical  │
+│ research.                                                            │
+│ STAGE: complete — released for free reuse with attribution.          │
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
 ---
